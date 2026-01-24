@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* MAIN CONTAINER */
+.todo-container {
+  min-height: 100vh;
+  padding-top: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(100deg, #001214, #001f29);
+  color: #fff;
+}
+
+/* HEADER */
+.header {
+  margin-bottom: 1.5rem;
+}
+
+.header h1 {
+  font-size: 3.2rem;
+}
+
+/* FORM */
+form {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+form input {
+  width: 360px;
+  padding: 8px 12px;
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+  background-color: #1a6ea5;
+  color: #fff;
+}
+
+form input::placeholder {
+  color: #fff;
+  opacity: 0.7;
+}
+
+form button {
+  padding: 8px 14px;
+  font-size: 1.4rem;
+  border: none;
+  cursor: pointer;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  background-color: #5dade2;
+}
+
+/* TODO LIST */
+.myUnOrdList {
+  display: flex;
+  justify-content: center;
+}
+
+.todo-list {
+  list-style: none;
+}
+
+/* TODO ITEM */
+.todo-item {
+  background-color: #f2f3f4;
+  color: #1c2833;
+  margin: 1.6rem;
+  padding: 1.2rem 2rem;
+  border-radius: 25px;
+  min-width: 280px;
+  max-width: 320px;
+
+  display: grid;
+  grid-template-columns: 1fr 40px 40px;
+  align-items: center;
+  gap: 1rem;
+}
+
+.todo-item span {
+  font-size: 15px;
+}
+
+/* ICON BUTTONS */
+.check-btn,
+.delete-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  font-size: 1.6rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 6px 16px;
+}
+
+.check-btn {
+  background-color: #2ecc71;
+  color: #fff;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+/* COMPLETED TASK */
+.checkList {
+  text-decoration: line-through;
+}
+.notCheckList {
+  text-decoration: none;
+}
+.Clear-btn {
+  background-color: red;       /* Red background */
+  color: white;                /* White text */
+  border: 2px solid darkred;   /* Dark red border */
+  padding: 10px 20px;          /* Space inside the button */
+  border-radius: 5px;          /* Rounded corners */
+  font-size: 16px;             /* Text size */
+  cursor: pointer;             /* Pointer on hover */
+  transition: all 0.3s ease;   /* Smooth hover effect */
+}
+
+.Clear-btn:hover {
+  background-color: darkred;   /* Darker red on hover */
+  border-color: #8b0000;       /* Even darker border */
+}
