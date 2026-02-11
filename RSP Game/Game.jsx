@@ -26,16 +26,16 @@ export default function Game() {
   }, [computer]);
 
   const checkWinner = () => {
-    if (player === computer) setResult("Draw 😐");
+    if (player === computer) setResult("Draw");
     else if (
       (player === "Rock" && computer === "Scissors") ||
       (player === "Paper" && computer === "Rock") ||
       (player === "Scissors" && computer === "Paper")
     ) {
-      setResult("You Win 🎉");
+      setResult("You Win ");
       setPScore(pScore + 1);
     } else {
-      setResult("You Lose 😢");
+      setResult("You Lose ");
       setCScore(cScore + 1);
     }
   };
